@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  background-color: #fffaf5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-bottom: 0.1rem solid black;
+  /* justify-content: space-between; */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+nav li a {
+  color: #19182f;
+}
+nav {
+  margin-left: auto;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 1rem 1rem;
+  z-index: 1;
+}
+
+.nav-sections > li:hover .dropdown {
+  display: block;
+}
+
+h1,
+h2,
+p,
+h5,
+h3,
+h6,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* main styles */
+
+.maindiv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0.3rem auto;
+  overflow: hidden;
+  max-width: 35rem;
+  align-items: center;
+  padding: 0.6rem;
+}
+.maindiv label {
+  margin-left: 1rem;
+}
+.maindiv input {
+  width: 12rem;
+}
+.maindiv .annoy_me {
+  width: 1rem;
+}
+.maindiv select {
+  width: 12rem;
+}
+
+.maindiv input {
+  outline: none;
+  border-radius: 10px;
+  height: 1.8rem;
+  /* width: 100%; */
+  margin-left: 0.5rem;
+}
+.maindiv input:focus {
+  border: 3px solid rgb(89, 186, 213);
+  border-radius: 10px;
+  height: 1.8rem;
+}
+
+.maindiv .name_label::before {
+  content: " *required";
+  color: blue;
+  font-weight: bold;
+  font-size: 0.5rem;
+}
+
+.maindiv .email_label::before {
+  content: " *required";
+  color: blue;
+  font-weight: bold;
+  font-size: 0.5rem;
+}
+.maindiv .tier_label::before {
+  content: " *required";
+  color: blue;
+  font-weight: bold;
+  font-size: 0.5rem;
+}
+
+.maindiv ::placeholder {
+  color: grey;
+}
+
+main h2 {
+  text-align: center;
+  margin: 3rem;
+}
+main .btn{
+    text-align: center;
+    color: rgb(247, 241, 241);
+    background-color: #fe5b2e;
+    border: 0rem;
+    border-radius: 10rem;
+    padding-left: 4rem;
+}
+/* footer styles */
+.subscribe_block{
+  text-align: center;
+  }
+  .subscribe_email{
+    border: 0rem;
+    background-color: rgb(248, 243, 243);
+    padding: 0.7rem;
+    border-radius: 10rem 0 0 10rem;
+  }
+  .subscribe_email_btn{
+    padding: 0.6rem;
+    background-color: #fe5b2e;
+    border: 0rem;
+    color: white;
+    border-radius: 10rem;
+    margin-left: -2rem;
+  }
+  .footer_block{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .contact_us{
+    /* display: flex; */
+    grid-column: span 3;
+  }
+  
+  .info_block{
+    grid-column: span 3;
+    text-align: center;
+  }
+  
+  .quick_links{
+    grid-column: span 3;
+  }
+  
+  .help{
+    grid-column: span 3;
+  }
+  
+  .contact_us img{
+    height: 1.5rem;
+  }
+  
+
+@media screen and (max-width: 50rem) {
+  .maindiv {
+    margin: 0.3rem auto;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 15rem;
+  }
+  .maindiv label {
+    margin-left: 0rem;
+  }
+  .maindiv input {
+    width: 12rem;
+  }
+  .maindiv .annoy_me {
+    width: 0.8rem;
+  }
+  .maindiv select {
+    width: 12rem;
+  }
+}
+@media screen and (max-width: 50rem) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav li {
+    margin: 1rem 0;
+    
+  }
+  .dropdown {
+    position: static;
+  }
+
+  /* main screen */
+  .cards {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .card {
+    grid-column: span 12;
+  }
+
+  /* footer styles  */
+  .footer_block{
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/cat1.jpg" alt="" width="60" height="70"/></a> 
+               
+        </div>
+        <h1>Cats</h1>
+        <h2>Register for Cat Care</h2>
+        <nav>
+            <ul class="nav-sections">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a>
+                <li><a href="#">More about cats</a>
+                    <ul class="dropdown">
+                        <li><a href="about.html#post-1">Abyssinian Cat</a></li>
+                        <li><a href="about.html#post-2">Bombay Cat</a></li>
+                        <li><a href="about.html#post-3">Egyptian Cat</a></li>
+                        <li><a href="about.html#post-4">Manx Cat</a></li>
+                        <li><a href="about.html#post-5">LaPerm Cat</a></li>
+                    </ul>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="SignIn.html">SignIn</a></li>
+            </ul>
+        </nav>
+
+       
+        
+    </header>
+
+    <main>
+       <h2>Register to know more about the cats</h2>
+       <form action="register" method="POST">
+        <div class="maindiv">
+            <label for="name" class="name_label">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required/>
+        </div>
+        
+        <div class="maindiv">
+            <label for="email" class="email_label">Email Id</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email id" required/>
+        </div>
+
+        <div class="maindiv">
+            <label for="annoy_me">Do you want us to send you weekly newsletter?</label>
+            <input class="annoy_me" id="annoy_me" type="checkbox" name="annoy_me" checked/>
+        </div>
+
+        <div class="maindiv">
+            <label for="tier" class="tier_label">Which cat are you interested in?</label>
+            <select name="tier" required>
+                <option value="">Please select</option>
+                <option value="1">Abyssinian Cat</option>
+                <option value="2">Bombay Cat</option>
+                <option value="3">Egyptian Cat</option>
+                <option value="3">Manx Cat</option>
+                <option value="3">LaPerm Cat</option>
+            </select>
+        </div>
+
+        <button type="submit" class="maindiv btn">Send Now</button>
+
+    </form>
+
+    </main>
+
+    <footer>
+        <div class="subscribe_block">
+        <h2>Subscribe Newsletter & get<br> Cat care News</h2>
+        <label for="subscribe_email"></label>
+        <input type="text" name="subscribe_email" class="subscribe_email" placeholder="Enter your email"/>
+        <button class="subscribe_email_btn">Subscribe</button>
+        </div>
+        <div class="footer_block">
+
+            <div class="info_block">
+                <h3>Cats</h3>
+            </div>
+
+            <div class="contact_us">
+                <h3>Reach out to us</h3>
+                <a href="#"><img src="images/facebook.svg" alt="facebook"/></a>
+                <a href="#"><img src="images/twitter.svg" alt="Twitter"/></a>
+                <a href="#"><img src="images/instagram.svg" alt="Instagram"/></a>
+                <a href="#"><img src="images/gmail.svg" alt="Gmail"/></a>
+            </div>
+            <div class="quick_links">
+                <h3>Quick Links</h3>
+                <h4>Cats</h4>
+                <h4>Puppy</h4>
+                <h4>Giraffe</h4>
+                <h4>Kitten</h4>
+            </div>
+
+            <div class="help">
+                <h3>Help</h3>
+                <h4>About Us</h4>
+                <h4>Registration</h4>
+                <h4>FAQ</h4>
+                <h4>Contact Us</h4>
+            </div>
+
+            
+        </div>
+        <h3>To check the privacy, please visit <a href="#">Privacy Policy</a></h3>
+
+    </footer>
+</body>
+</html>
