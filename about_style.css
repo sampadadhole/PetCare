@@ -11,6 +11,18 @@ header {
   border-bottom: 0.1rem solid black;
   /* justify-content: space-between; */
 }
+.headng{
+
+  padding-left: 2rem;
+  background-color: #fffaf5;
+
+}
+
+.headng h2{
+  margin-top: -1rem;
+}
+
+
 h1,
 h2,
 p,
@@ -68,6 +80,11 @@ nav {
 main{
   margin: 1rem;
 }
+
+main h3{
+padding-top: 1rem;
+}
+
 main img {
   height: 9rem;
   width: 8rem;
@@ -96,6 +113,13 @@ main img {
 .subscribe_block{
   text-align: center;
   }
+
+  .subscribe_block h1{
+    padding-bottom: 1rem;
+  }
+  .subscribe_email_block{
+    padding-bottom: 3rem;
+  }
   .subscribe_email{
     border: 0rem;
     background-color: rgb(248, 243, 243);
@@ -113,6 +137,17 @@ main img {
   .footer_block{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+  }
+  .footer_block h4{
+    color: #68625e;
+  }
+
+  .footer_block  h2{
+   background-color: #fffaf5;
+  }
+  .privacy_block{
+    background-color: #ffeadf;
+    text-align: center;
   }
   
   .contact_us{
